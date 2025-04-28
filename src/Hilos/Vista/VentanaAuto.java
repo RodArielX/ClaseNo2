@@ -38,11 +38,10 @@ public class VentanaAuto extends JFrame {
                 try {
                     vehiculo.setPrecio(Double.parseDouble(txtPrecio.getText()));
                 } catch (NumberFormatException ex) {
-                    JOptionPane.showMessageDialog(null, "Precio inválido");
+                    JOptionPane.showMessageDialog(null, "Precio invalido");
                     return;
                 }
 
-                // Abrir la segunda ventana
                 new VentanaDatos(vehiculo).setVisible(true);
             }
         });
