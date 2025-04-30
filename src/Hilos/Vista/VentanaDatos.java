@@ -15,6 +15,13 @@ public class VentanaDatos extends JFrame {
         add(new JLabel("Marca: " + vehiculo.getMarca()));
         add(new JLabel("Modelo: " + vehiculo.getModelo()));
         add(new JLabel("Precio: $" + vehiculo.getPrecio()));
+
+        JButton btnCerrar = new JButton("Cerrar");
+        btnCerrar.addActionListener(e -> dispose());
+        add(btnCerrar);
+
+        setLocationRelativeTo(null);
+        setVisible(true);
     }
 }
 

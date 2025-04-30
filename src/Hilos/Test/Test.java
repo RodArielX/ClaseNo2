@@ -13,14 +13,15 @@ public class Test {
         System.out.println("Fecha de Nacimiento: "+p.getFechaNacimiento());
         System.out.println("Direccion: "+p.getDireccion());*/
 
+        Runnable y = new ProcesoE("Hola como estas");
+        Thread e = new Thread(y);
         ProcesoA a = new ProcesoA("Ariel");
         ProcesoB b = new ProcesoB(1000);
         ProcesoC c = new ProcesoC(9);
         //ProcesoD d = new ProcesoD(100);
         Runnable x = new ProcesoD(100);
         Thread d = new Thread(x);
-        Runnable y = new ProcesoE("Hola como estas");
-        Thread e = new Thread(y);
+
 
         Runnable z = new ProcesoF();
         Thread f = new Thread(z);
